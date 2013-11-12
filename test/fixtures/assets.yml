@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Client: MyString
+  Description: MyString
+  C3: MyString
+  C4: MyString
+  Media_Code: MyString
+  Date_In: 2013-11-09
+  Day_One: 2013-11-09
+  Return_Date: 2013-11-09
+
+two:
+  Client: MyString
+  Description: MyString
+  C3: MyString
+  C4: MyString
+  Media_Code: MyString
+  Date_In: 2013-11-09
+  Day_One: 2013-11-09
+  Return_Date: 2013-11-09

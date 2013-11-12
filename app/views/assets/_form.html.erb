@@ -1,0 +1,49 @@
+<%= form_for(@asset) do |f| %>
+  <% if @asset.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@asset.errors.count, "error") %> prohibited this asset from being saved:</h2>
+
+      <ul>
+      <% @asset.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Client %><br />
+    <%= f.text_field :Client %>
+  </div>
+  <div class="field">
+    <%= f.label :Description %><br />
+    <%= f.text_field :Description %>
+  </div>
+  <div class="field">
+    <%= f.label :C3 %><br />
+    <%= f.text_field :C3 %>
+  </div>
+  <div class="field">
+    <%= f.label :C4 %><br />
+    <%= f.text_field :C4 %>
+  </div>
+  <div class="field">
+    <%= f.label :Media_Code %><br />
+    <%= f.text_field :Media_Code %>
+  </div>
+  <div class="field">
+    <%= f.label :Date_In %><br />
+    <%= f.date_select :Date_In %>
+  </div>
+  <div class="field">
+    <%= f.label :Day_One %><br />
+    <%= f.date_select :Day_One %>
+  </div>
+  <div class="field">
+    <%= f.label :Return_Date %><br />
+    <%= f.date_select :Return_Date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

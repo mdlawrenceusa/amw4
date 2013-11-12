@@ -1,0 +1,69 @@
+
+
+<nav class="top-bar">
+  <ul class="title-area">
+    <li class="name">
+      <h1>Toll Free (866) 996-9111</h1>
+    </li>
+  </ul>
+  <section class="top-bar-section">
+    <ul class="right">
+      <li class="divider"></li>
+      <li class="has-dropdown not-click"><%= link_to "Services", "/" %> 
+	        <ul class="dropdown"><li class="title back js-generated"><h5><a href="#">Back</a></h5></li>
+       		 	<li class=""><label>Archives Mountain Services</label></li>
+				<li class=""><%= link_to_unless_current "Offsite Media Storage", 'offsite_media_storage'  %> </li>
+				<li class=""><%= link_to_unless_current "Data Protection & Recovery", 'data_protection'   %> </li>
+				<li class=""><%= link_to_unless_current "Document Management", 'document_management' %> </li>
+				<li class=""><%= link_to_unless_current "Online Backup & Recovery", 'online_backup_and_recovery'  %> </li>
+				<li class=""><%= link_to_unless_current "Courier Service", 'courier'  %> </li>
+				<li class=""><%= link_to_unless_current "Record Storage & Retrieval", 'record_storage'  %> </li>
+				<li class=""><%= link_to_unless_current "Secure Document Shredding", 'secure_shredding' %> </li>
+				<li class="divider"></li>
+				<li class=""><%= link_to_unless_current "Knowledge Base", 'knowledge_base'  %> </li>
+				<li class=""><%= link_to_unless_current "FAQs", 'faq'  %> </li>
+			</ul>
+		</li>
+      <li class="divider"></li>
+      <li><%= link_to "Request a Quote", 'quote' %></li>
+      <li class="divider"></li>
+      <li><%= link_to "About us", 'about' %></li>
+      <li class="divider"></li>
+      <li><%= link_to "Contact us", 'contact' %></li>
+      <li class="divider"></li>
+      <li><%= link_to "Admin", 'admin'%></li>
+    </ul>
+  </section>
+</nav>
+<!-- ><a href="home"><img src="http://d2tdlvck5na3c0.cloudfront.net/clients/archivesmountain/images/logo.png" alt="Archives mountain logo"></a>
+<a href="home"><img src= <%=cloudFrontPath%>images/logo.png alt="Archives mountain logo"></a> -->
+ <section >
+
+	 <div class="small-7 columns" >
+	      	 <a href="home"><%= image_tag cloudFrontPath+"images/logo.png"%></a>
+	      </div>
+		  
+	      <div class="small-3 columns">
+	       
+			<h4 class="subheader">
+			<a href="https://maps.google.com/maps?q=64+Barnabas+Road+Newtown,+CT+06470&hnear=64+Barnabas+Rd,+Newtown,+Connecticut+06470&gl=us&t=h&z=16">
+				64 Barnabas Road<br />Newtown, CT 06470
+			</a>
+			<br /></h4>
+			
+		
+	      </div>
+		  
+	      <div class="small-2 columns">
+			
+			<a href="mailto:info@ArchivesMountain.com">info@ArchivesMountain.com</a><br />
+			203.364.9272<br />
+			866.996.9111<br />
+			Fax: 203.714.7224<br />
+	      </div>
+		  <div class="row"></div>
+	  </section>
+	   
+
+
+		  

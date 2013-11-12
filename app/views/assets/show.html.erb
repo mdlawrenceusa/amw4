@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Client:</b>
+  <%= @asset.Client %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @asset.Description %>
+</p>
+
+<p>
+  <b>C3:</b>
+  <%= @asset.C3 %>
+</p>
+
+<p>
+  <b>C4:</b>
+  <%= @asset.C4 %>
+</p>
+
+<p>
+  <b>Media code:</b>
+  <%= @asset.Media_Code %>
+</p>
+
+<p>
+  <b>Date in:</b>
+  <%= @asset.Date_In %>
+</p>
+
+<p>
+  <b>Day one:</b>
+  <%= @asset.Day_One %>
+</p>
+
+<p>
+  <b>Return date:</b>
+  <%= @asset.Return_Date %>
+</p>
+
+
+<%= link_to 'Edit', edit_asset_path(@asset) %> |
+<%= link_to 'Back', assets_path %>

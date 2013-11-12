@@ -1,0 +1,41 @@
+<h1>Listing assets</h1>
+
+<table id="assets">
+<thead>  
+  <tr>
+    <th>Client</th>
+    <th>Description</th>
+    <th>C3</th>
+    <th>C4</th>
+    <th>Media code</th>
+    <th>Date in</th>
+    <th>Day one</th>
+    <th>Return date</th>
+
+  </tr>
+</thead>
+<tbody>
+<% @assets.each do |asset| %>
+  <tr>
+    <td><%= asset.Client %></td>
+    <td><%= asset.Description %></td>
+    <td><%= asset.C3 %></td>
+    <td><%= asset.C4 %></td>
+    <td><%= asset.Media_Code %></td>
+    <td><%= asset.Date_In %></td>
+    <td><%= asset.Day_One %></td>
+    <td><%= asset.Return_Date %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+
+<br />
+
+<%= link_to 'New Asset', new_asset_path %>
+<h2>Import Assets</h2>
+
+<%= form_tag import_assets_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>
